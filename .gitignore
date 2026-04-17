@@ -1,0 +1,11 @@
+
+# dbt
+target/
+logs/
+.env
+profiles.yml
+
+# general
+__pycache__/
+*.pyc
+``
