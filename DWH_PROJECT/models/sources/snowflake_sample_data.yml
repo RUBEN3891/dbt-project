@@ -1,0 +1,18 @@
+
+version: 2
+
+sources:
+  - name: snowflake_sample_data
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF10TCL
+    tables:
+      - name: WAREHOUSE
+
+
+  - name: snowflake_sample_data_2
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF10
+    tables:
+      - name: ORDERS
+      - name: CUSTOMER
+
