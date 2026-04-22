@@ -21,7 +21,7 @@ select *
 from {{ source('snowflake_sample_data_2', 'ORDERS') }} as O
 left join {{ source('snowflake_sample_data_2', 'CUSTOMER') }} as C
     on O.O_CUSTKEY = C.C_CUSTKEY
-where O.O_TOTALPRICE > 530000.00
+where O.O_TOTALPRICE > 500000.00
   and C.C_MKTSEGMENT = 'MACHINERY'
 
 
